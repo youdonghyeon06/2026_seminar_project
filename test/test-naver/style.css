@@ -1,0 +1,174 @@
+/* ��본 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul { list-style: none; }
+a { text-decoration: none; color: inherit; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, sans-serif;
+    background-color: #f5f6f7;
+    color: #333;
+}
+
+#wrap {
+    min-width: 1190px;
+    margin: 0 auto;
+}
+
+/* 헤더 & 검색창 */
+#header {
+    background-color: #fff;
+    padding: 30px 0;
+    border-bottom: 1px solid #e4e8eb;
+}
+#header .inner {
+    width: 1190px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.logo a {
+    font-size: 32px;
+    font-weight: 900;
+    color: #03c75a; /* 네이버 시그니처 그린 */
+}
+.search_area form {
+    display: flex;
+    border: 2px solid #03c75a;
+    border-radius: 2px;
+    overflow: hidden;
+}
+#search_input {
+    width: 450px;
+    padding: 12px 15px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+.btn_search {
+    background-color: #03c75a;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* 내비게이션 */
+#nav {
+    background-color: #fff;
+    border-bottom: 1px solid #e4e8eb;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.nav_list {
+    width: 1190px;
+    margin: 0 auto;
+    display: flex;
+}
+.nav_list li a {
+    display: block;
+    padding: 15px 20px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.nav_list li a:hover {
+    color: #03c75a;
+}
+
+/* 메인 컨테이너 */
+#container {
+    width: 1190px;
+    margin: 20px auto;
+    display: flex;
+    gap: 30px;
+}
+
+/* 왼쪽 영역 */
+.content_left {
+    flex: 1;
+}
+.news_stand, .theme_cast {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #e4e8eb;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+.news_stand h2, .theme_cast h2 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.news_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.news_item {
+    border: 1px solid #e4e8eb;
+    padding: 30px;
+    text-align: center;
+    background-color: #f9f9fa;
+    color: #888;
+}
+.theme_content {
+    height: 300px;
+    background-color: #f9f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+}
+
+/* 오른쪽 영역 */
+.content_right {
+    width: 350px;
+}
+.login_area, .weather_area {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #e4e8eb;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+.login_area p {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 10px;
+}
+.btn_login {
+    width: 100%;
+    background-color: #03c75a;
+    color: white;
+    border: none;
+    padding: 15px 0;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.btn_login:hover {
+    background-color: #02b350;
+}
+.login_links {
+    text-align: center;
+    font-size: 13px;
+    color: #888;
+}
+.login_links a:hover {
+    text-decoration: underline;
+}
+
+/* 푸터 */
+#footer {
+    text-align: center;
+    padding: 40px 0;
+    color: #888;
+    background-color: #fafbfc;
+    border-top: 1px solid #e4e8eb;
+    margin-top: 40px;
+}

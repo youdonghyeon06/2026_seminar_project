@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>커뮤니티 탭 라우팅 예제</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    nav a { margin-right: 15px; text-decoration: none; color: blue; }
+    nav a.active { font-weight: bold; color: red; }
+    .board-container { margin-top: 20px; padding: 20px; border: 1px solid #ccc; }
+  </style>
+</head>
+<body>
+
+  <!-- 네비게이션 메뉴 -->
+  <nav>
+    <a href="/" data-link>메인 페이지</a>
+    <a href="/board?tab=all" data-link>전체글</a>
+    <a href="/board?tab=best" data-link>개념글</a>
+    <a href="/board?tab=notice" data-link>공지사항</a>
+  </nav>
+
+  <!-- 자바스크립트가 화면을 그려넣을 영역 -->
+  <main id="app"></main>
+
+  <script src="app.js"></script>
+</body>
+</html>

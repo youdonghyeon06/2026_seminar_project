@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버 클론</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrap">
+        <!-- 헤더 영역 (로고 및 검색창) -->
+        <header id="header">
+            <div class="inner">
+                <h1 class="logo"><a href="#">NAVER</a></h1>
+                <div class="search_area">
+                    <form onsubmit="handleSearch(event)">
+                        <input type="text" id="search_input" placeholder="검색어를 입력해 주세요.">
+                        <button type="submit" class="btn_search">검색</button>
+                    </form>
+                </div>
+            </div>
+        </header>
+
+        <!-- 내비게이션 영역 -->
+        <nav id="nav">
+            <ul class="nav_list">
+                <li><a href="#">메일</a></li>
+                <li><a href="#">카페</a></li>
+                <li><a href="#">블로그</a></li>
+                <li><a href="#">지식iN</a></li>
+                <li><a href="#">쇼핑</a></li>
+                <li><a href="#">뉴스</a></li>
+                <li><a href="#">증권</a></li>
+                <li><a href="#">부동산</a></li>
+                <li><a href="#">지도</a></li>
+            </ul>
+        </nav>
+
+        <!-- 메인 콘텐츠 영역 -->
+        <main id="container">
+            <!-- 왼쪽/가운데 영역 (뉴스, 테마캐스트 등) -->
+            <div class="content_left">
+                <section class="news_stand">
+                    <h2>뉴스스탠드</h2>
+                    <div class="news_grid">
+                        <div class="news_item">언론사 1</div>
+                        <div class="news_item">언론사 2</div>
+                        <div class="news_item">언론사 3</div>
+                        <div class="news_item">언론사 4</div>
+                        <div class="news_item">언론사 5</div>
+                        <div class="news_item">언론사 6</div>
+                    </div>
+                </section>
+                <section class="theme_cast">
+                    <h2>오늘의 읽을거리</h2>
+                    <div class="theme_content">
+                        다양한 콘텐츠가 들어갈 자리입니다.
+                    </div>
+                </section>
+            </div>
+
+            <!-- 오른쪽 영역 (로그인, 위젯 등) -->
+            <div class="content_right">
+                <section class="login_area">
+                    <p>네이버를 더 안전하고 편리하게 이용하세요</p>
+                    <button class="btn_login" onclick="login()">NAVER 로그인</button>
+                    <div class="login_links">
+                        <a href="#">아이디 찾기</a> | <a href="#">비밀번호 찾기</a> | <a href="#">회원가입</a>
+                    </div>
+                </section>
+                <section class="weather_area">
+                    <h3>오늘의 날씨</h3>
+                    <p>☀️ 맑음 20°C</p>
+                </section>
+            </div>
+        </main>
+
+        <!-- 푸터 영역 -->
+        <footer id="footer">
+            <p>&copy; NAVER Corp. 클론 코딩</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
